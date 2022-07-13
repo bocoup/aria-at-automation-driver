@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<installer-gui-script minSpecVersion="2">
+    <pkg-ref id="com.bocoup.automation-voice"/>
+    <options customize="never" require-scripts="false" hostArchitectures="x86_64,arm64"/>
+    <volume-check>
+        <allowed-os-versions>
+            <os-version min="10.15.0"/>
+            <os-version min="10.15" before="10.16"/>
+        </allowed-os-versions>
+    </volume-check>
+    <choices-outline>
+        <line choice="default">
+            <line choice="com.bocoup.automation-voice"/>
+        </line>
+    </choices-outline>
+    <choice id="default"/>
+    <choice id="com.bocoup.automation-voice" visible="false">
+        <pkg-ref id="com.bocoup.automation-voice"/>
+    </choice>
+    <pkg-ref id="com.bocoup.automation-voice" version="0" onConclusion="none">AutomationVoiceComponent.pkg</pkg-ref>
+</installer-gui-script>

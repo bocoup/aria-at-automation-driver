@@ -1,0 +1,487 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		9001DA2C0B545C7500C22AD0 /* AllSynthesizersAndVoices */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 9001DA330B545C7500C22AD0 /* Build configuration list for PBXAggregateTarget "AllSynthesizersAndVoices" */;
+			buildPhases = (
+			);
+			dependencies = (
+				90EE9C980B5865C400AB4035 /* PBXTargetDependency */,
+				90EE9C9A0B5865C700AB4035 /* PBXTargetDependency */,
+			);
+			name = AllSynthesizersAndVoices;
+			productName = SynthesizerAndVoices;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		9001DD6E0B545FCE00C22AD0 /* BenchmarkSynthesizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B234900B5437520071AD97 /* BenchmarkSynthesizer.m */; };
+		9001DD700B545FD500C22AD0 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F558A0E5038B716501A8016F /* ApplicationServices.framework */; };
+		9001DE3E0B55B80100C22AD0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9001DE3D0B55B80100C22AD0 /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		90EE9C970B5865C400AB4035 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F598981603899BCC01CA1584 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9001DA6D0B545D7600C22AD0;
+			remoteInfo = SynthesizerCF;
+		};
+		90EE9C990B5865C700AB4035 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F598981603899BCC01CA1584 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9001DA790B545DCB00C22AD0;
+			remoteInfo = VoiceCF1;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9001DA6E0B545D7600C22AD0 /* BenchmarkSynthesizer.SpeechSynthesizer */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BenchmarkSynthesizer.SpeechSynthesizer; sourceTree = BUILT_PRODUCTS_DIR; };
+		9001DA6F0B545D7600C22AD0 /* Info-Synthesizer.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-Synthesizer.plist"; path = "Synthesizer/Info-Synthesizer.plist"; sourceTree = "<group>"; };
+		9001DA7A0B545DCB00C22AD0 /* Cher.SpeechVoice */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Cher.SpeechVoice; sourceTree = BUILT_PRODUCTS_DIR; };
+		9001DA7B0B545DCB00C22AD0 /* Info-Voice.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-Voice.plist"; path = "Voice/Info-Voice.plist"; sourceTree = "<group>"; };
+		9001DE3D0B55B80100C22AD0 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		90B234900B5437520071AD97 /* BenchmarkSynthesizer.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = BenchmarkSynthesizer.m; path = Synthesizer/BenchmarkSynthesizer.m; sourceTree = "<group>"; };
+		F558A0E5038B716501A8016F /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = /System/Library/Frameworks/ApplicationServices.framework; sourceTree = "<absolute>"; };
+		F59898390389ADD001CA1584 /* SpeechEngine.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SpeechEngine.h; path = Synthesizer/SpeechEngine.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9001DA6C0B545D7600C22AD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9001DD700B545FD500C22AD0 /* ApplicationServices.framework in Frameworks */,
+				9001DE3E0B55B80100C22AD0 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9001DA780B545DCB00C22AD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9001DD790B545FE100C22AD0 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				9001DE3D0B55B80100C22AD0 /* Cocoa.framework */,
+				F558A0E5038B716501A8016F /* ApplicationServices.framework */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		9001DD7F0B54600600C22AD0 /* Voice */ = {
+			isa = PBXGroup;
+			children = (
+				9001DA7B0B545DCB00C22AD0 /* Info-Voice.plist */,
+			);
+			name = Voice;
+			sourceTree = "<group>";
+		};
+		90B2348C0B5436FB0071AD97 /* Synthesizer */ = {
+			isa = PBXGroup;
+			children = (
+				90B234900B5437520071AD97 /* BenchmarkSynthesizer.m */,
+				F59898390389ADD001CA1584 /* SpeechEngine.h */,
+				9001DA6F0B545D7600C22AD0 /* Info-Synthesizer.plist */,
+				9001DD7F0B54600600C22AD0 /* Voice */,
+			);
+			name = Synthesizer;
+			sourceTree = "<group>";
+		};
+		F598981203899BCC01CA1584 = {
+			isa = PBXGroup;
+			children = (
+				90B2348C0B5436FB0071AD97 /* Synthesizer */,
+				9001DD790B545FE100C22AD0 /* Common */,
+				F598981E03899C4001CA1584 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F598981E03899C4001CA1584 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9001DA6E0B545D7600C22AD0 /* BenchmarkSynthesizer.SpeechSynthesizer */,
+				9001DA7A0B545DCB00C22AD0 /* Cher.SpeechVoice */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9001DA6D0B545D7600C22AD0 /* BenchmarkSynthesizer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9001DA700B545D7700C22AD0 /* Build configuration list for PBXNativeTarget "BenchmarkSynthesizer" */;
+			buildPhases = (
+				9001DA6A0B545D7600C22AD0 /* Resources */,
+				9001DA6B0B545D7600C22AD0 /* Sources */,
+				9001DA6C0B545D7600C22AD0 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BenchmarkSynthesizer;
+			productName = SynthesizerCF;
+			productReference = 9001DA6E0B545D7600C22AD0 /* BenchmarkSynthesizer.SpeechSynthesizer */;
+			productType = "com.apple.product-type.bundle";
+		};
+		9001DA790B545DCB00C22AD0 /* CherVoice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9001DA7C0B545DD000C22AD0 /* Build configuration list for PBXNativeTarget "CherVoice" */;
+			buildPhases = (
+				9001DA760B545DCB00C22AD0 /* Resources */,
+				9001DA770B545DCB00C22AD0 /* Sources */,
+				9001DA780B545DCB00C22AD0 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CherVoice;
+			productName = VoiceCF1;
+			productReference = 9001DA7A0B545DCB00C22AD0 /* Cher.SpeechVoice */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F598981603899BCC01CA1584 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = 90B234740B5435F20071AD97 /* Build configuration list for PBXProject "SynthesizerAndVoiceExample" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = en;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F598981203899BCC01CA1584;
+			productRefGroup = F598981E03899C4001CA1584 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9001DA2C0B545C7500C22AD0 /* AllSynthesizersAndVoices */,
+				9001DA6D0B545D7600C22AD0 /* BenchmarkSynthesizer */,
+				9001DA790B545DCB00C22AD0 /* CherVoice */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9001DA6A0B545D7600C22AD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9001DA760B545DCB00C22AD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9001DA6B0B545D7600C22AD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9001DD6E0B545FCE00C22AD0 /* BenchmarkSynthesizer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9001DA770B545DCB00C22AD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		90EE9C980B5865C400AB4035 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9001DA6D0B545D7600C22AD0 /* BenchmarkSynthesizer */;
+			targetProxy = 90EE9C970B5865C400AB4035 /* PBXContainerItemProxy */;
+		};
+		90EE9C9A0B5865C700AB4035 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9001DA790B545DCB00C22AD0 /* CherVoice */;
+			targetProxy = 90EE9C990B5865C700AB4035 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9001DA340B545C7500C22AD0 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = SynthesizerAndVoices;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Development;
+		};
+		9001DA350B545C7500C22AD0 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = SynthesizerAndVoices;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Deployment;
+		};
+		9001DA360B545C7500C22AD0 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = SynthesizerAndVoices;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Default;
+		};
+		9001DA710B545D7700C22AD0 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				INFOPLIST_FILE = "Synthesizer/Info-Synthesizer.plist";
+				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Speech/Synthesizers";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+				);
+				PREBINDING = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = org.monotonous.BenchmarkSynthesizer;
+				PRODUCT_NAME = BenchmarkSynthesizer;
+				WRAPPER_EXTENSION = SpeechSynthesizer;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		9001DA720B545D7700C22AD0 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				INFOPLIST_FILE = "Synthesizer/Info-Synthesizer.plist";
+				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Speech/Synthesizers";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+				);
+				PREBINDING = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = org.monotonous.BenchmarkSynthesizer;
+				PRODUCT_NAME = BenchmarkSynthesizer;
+				WRAPPER_EXTENSION = SpeechSynthesizer;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		9001DA730B545D7700C22AD0 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				INFOPLIST_FILE = "Synthesizer/Info-Synthesizer.plist";
+				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Speech/Synthesizers";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+				);
+				PREBINDING = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = org.monotonous.BenchmarkSynthesizer;
+				PRODUCT_NAME = BenchmarkSynthesizer;
+				WRAPPER_EXTENSION = SpeechSynthesizer;
+				ZERO_LINK = YES;
+			};
+			name = Default;
+		};
+		9001DA7D0B545DD000C22AD0 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				INFOPLIST_FILE = "Voice/Info-Voice.plist";
+				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Speech/Voices/";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+				);
+				PREBINDING = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = org.monotonous.BenchmarkSynthesizer.Cher;
+				PRODUCT_NAME = Cher;
+				WRAPPER_EXTENSION = SpeechVoice;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		9001DA7E0B545DD000C22AD0 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				INFOPLIST_FILE = "Voice/Info-Voice.plist";
+				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Speech/Voices/";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+				);
+				PREBINDING = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = org.monotonous.BenchmarkSynthesizer.Cher;
+				PRODUCT_NAME = Cher;
+				WRAPPER_EXTENSION = SpeechVoice;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		9001DA7F0B545DD000C22AD0 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				INFOPLIST_FILE = "Voice/Info-Voice.plist";
+				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Speech/Voices/";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+				);
+				PREBINDING = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = org.monotonous.BenchmarkSynthesizer.Cher;
+				PRODUCT_NAME = Cher;
+				WRAPPER_EXTENSION = SpeechVoice;
+				ZERO_LINK = YES;
+			};
+			name = Default;
+		};
+		90B234750B5435F20071AD97 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Development;
+		};
+		90B234760B5435F20071AD97 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Deployment;
+		};
+		90B234770B5435F20071AD97 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9001DA330B545C7500C22AD0 /* Build configuration list for PBXAggregateTarget "AllSynthesizersAndVoices" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9001DA340B545C7500C22AD0 /* Development */,
+				9001DA350B545C7500C22AD0 /* Deployment */,
+				9001DA360B545C7500C22AD0 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		9001DA700B545D7700C22AD0 /* Build configuration list for PBXNativeTarget "BenchmarkSynthesizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9001DA710B545D7700C22AD0 /* Development */,
+				9001DA720B545D7700C22AD0 /* Deployment */,
+				9001DA730B545D7700C22AD0 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		9001DA7C0B545DD000C22AD0 /* Build configuration list for PBXNativeTarget "CherVoice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9001DA7D0B545DD000C22AD0 /* Development */,
+				9001DA7E0B545DD000C22AD0 /* Deployment */,
+				9001DA7F0B545DD000C22AD0 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		90B234740B5435F20071AD97 /* Build configuration list for PBXProject "SynthesizerAndVoiceExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90B234750B5435F20071AD97 /* Development */,
+				90B234760B5435F20071AD97 /* Deployment */,
+				90B234770B5435F20071AD97 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F598981603899BCC01CA1584 /* Project object */;
+}

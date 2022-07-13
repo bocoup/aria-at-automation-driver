@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+	<key>VoiceAttributes</key>
+	<dict>
+		<key>VoiceAge</key>
+		<integer>20</integer>
+		<key>VoiceDemoText</key>
+		<string>Hi! I don&apos;t say much.</string>
+		<key>VoiceGender</key>
+		<string>VoiceGenderFemale</string>
+		<key>VoiceIndividuallySpokenCharacters</key>
+		<array>
+			<dict>
+				<key>UnicodeCharBegin</key>
+				<integer>33</integer>
+				<key>UnicodeCharEnd</key>
+				<integer>126</integer>
+			</dict>
+		</array>
+		<key>VoiceLocaleIdentifier</key>
+		<string>en-US</string>
+		<key>VoiceName</key>
+		<string>Cher</string>
+		<key>VoiceNumericID</key>
+		<integer>1</integer>
+		<key>VoiceSupportedCharacters</key>
+		<array>
+			<dict>
+				<key>UnicodeCharBegin</key>
+				<integer>0</integer>
+				<key>UnicodeCharEnd</key>
+				<integer>255</integer>
+			</dict>
+		</array>
+		<key>VoiceSynthesizerNumericID</key>
+		<integer>123456789</integer>
+	</dict>
+</dict>
+</plist>
