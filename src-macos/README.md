@@ -4,12 +4,19 @@ This is a speech synthesis voice for macOS. It does not output any audio;
 instead, it sends TCP messages on the local network when any software uses the
 macOS text-to-speech system.
 
+## Prequisites
+
+You must secure Apple Inc.'s permission to develop for their platform. [Create
+an Apple ID](https://appleid.apple.com). As of October 2022, the company does
+not charge a fee for this account.
+
 ## Installation
 
 To build and install the voice on the local system:
 
-1. Run `sudo xcodebuild install DSTROOT=/`
-2. Run `sudo pkill -f com.apple.speech.speechsynthesisd`
+1. Install Xcode through the Apple App Store
+2. Run `sudo xcodebuild install DSTROOT=/`
+3. Run `sudo pkill -f com.apple.speech.speechsynthesisd`
 
 ## Usage
 
